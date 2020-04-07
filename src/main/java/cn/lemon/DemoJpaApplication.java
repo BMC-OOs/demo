@@ -1,4 +1,4 @@
-package cn.bmc;
+package cn.lemon;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

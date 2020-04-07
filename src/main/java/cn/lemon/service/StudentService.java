@@ -1,9 +1,7 @@
-package cn.bmc.service;
+package cn.lemon.service;
 
-import cn.bmc.dao.StudentDao;
-import cn.bmc.dto.StudentDTO;
+import cn.lemon.dto.StudentDTO;
 import com.nhsoft.provider.common.Response;
-import org.springframework.data.domain.Page;
 
 import java.util.List;
 

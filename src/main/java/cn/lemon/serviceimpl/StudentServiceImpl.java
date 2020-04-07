@@ -1,10 +1,10 @@
-package cn.bmc.serviceimpl;
+package cn.lemon.serviceimpl;
 
-import cn.bmc.dao.StudentDao;
-import cn.bmc.dto.StudentDTO;
-import cn.bmc.service.StudentService;
-import cn.bmc.utils.CastEntityUtil;
-import cn.bmc.utils.PageList;
+import cn.lemon.dao.StudentDao;
+import cn.lemon.dto.StudentDTO;
+import cn.lemon.service.StudentService;
+import cn.lemon.utils.CastEntityUtil;
+import cn.lemon.utils.PageList;
 import com.nhsoft.provider.common.Response;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

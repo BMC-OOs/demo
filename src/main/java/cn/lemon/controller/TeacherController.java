@@ -1,8 +1,6 @@
-package cn.bmc.controller;
+package cn.lemon.controller;
 
-import cn.bmc.dao.TeacherDao;
-import cn.bmc.dto.TeacherDTO;
-import cn.bmc.service.TeacherService;
+import cn.lemon.service.TeacherService;
 import com.nhsoft.provider.common.Response;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.Logger;
@@ -11,8 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
 
 /**
  * @author BMC

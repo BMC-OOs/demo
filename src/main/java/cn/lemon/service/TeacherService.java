@@ -1,7 +1,6 @@
-package cn.bmc.service;
+package cn.lemon.service;
 
-import cn.bmc.dto.TeacherDTO;
-import cn.bmc.model.Teacher;
+import cn.lemon.dto.TeacherDTO;
 import com.nhsoft.provider.common.Response;
 
 import java.util.List;

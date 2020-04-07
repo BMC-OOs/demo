@@ -1,11 +1,9 @@
-package cn.bmc.model;
+package cn.lemon.model;
 
 import lombok.Data;
 
 import javax.persistence.*;
-import java.util.ArrayList;
 import java.sql.Date;
-import java.util.List;
 
 /**
  * 分数类

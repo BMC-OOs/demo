@@ -1,4 +1,4 @@
-package cn.bmc.dto;
+package cn.lemon.dto;
 
 import lombok.Data;
 
@@ -7,10 +7,14 @@ import java.sql.Date;
 
 /**
  * @author BMC
- * @date 2020-04-07 0:18
+ * @date 2020-04-07 0:04
  */
 @Data
-public class CourseDTO {
+public class TeacherDTO {
+    /**
+     * 教师姓名
+     */
+    private String teacherName;
     /**
      * 课程名
      */
@@ -20,11 +24,11 @@ public class CourseDTO {
      */
     private BigDecimal avgScore;
     /**
-     * 最大分
+     * 最高分
      */
     private Integer maxScore;
     /**
-     * 最小分
+     * 最低分
      */
     private Integer minScore;
     /**
@@ -32,11 +36,14 @@ public class CourseDTO {
      */
     private Date date;
 
-    public CourseDTO(String courseName, BigDecimal avgScore, Integer maxScore, Integer minScore, Date date) {
+    public TeacherDTO(String teacherName, String courseName, BigDecimal avgScore, Integer maxScore, Integer minScore, Date date) {
+        this.teacherName = teacherName;
         this.courseName = courseName;
         this.avgScore = avgScore;
         this.maxScore = maxScore;
         this.minScore = minScore;
         this.date = date;
     }
+
+
 }

@@ -1,6 +1,6 @@
-package cn.bmc.service;
+package cn.lemon.service;
 
-import cn.bmc.dto.CourseDTO;
+import cn.lemon.dto.CourseDTO;
 import com.nhsoft.provider.common.Response;
 
 

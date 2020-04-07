@@ -1,4 +1,4 @@
-package cn.bmc.dto;
+package cn.lemon.dto;
 
 import lombok.Data;
 

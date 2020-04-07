@@ -1,12 +1,10 @@
-package cn.bmc.serviceimpl;
+package cn.lemon.serviceimpl;
 
-import cn.bmc.dao.CourseDao;
-import cn.bmc.dto.CourseDTO;
-import cn.bmc.service.CourseService;
-import cn.bmc.utils.CastEntityUtil;
-import cn.bmc.utils.PageList;
+import cn.lemon.dao.CourseDao;
+import cn.lemon.dto.CourseDTO;
+import cn.lemon.service.CourseService;
+import cn.lemon.utils.CastEntityUtil;
 import com.nhsoft.provider.common.Response;
-import javassist.expr.Cast;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

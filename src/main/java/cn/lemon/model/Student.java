@@ -1,4 +1,4 @@
-package cn.bmc.model;
+package cn.lemon.model;
 
 import lombok.Data;
 
