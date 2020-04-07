@@ -23,6 +23,9 @@
             <!--这样过滤以后，该文件中只会输出info级别的日志信息-->
         </filter>
         <!--日志输出格式，同上-->
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+            <maxFileSize>10MB</maxFileSize>
+        </triggeringPolicy>
         <encoder>
             <pattern>
                 %d - %msg%n
@@ -43,6 +46,9 @@
             <level>ERROR</level>
         </filter>
         <!--日志输出格式-->
+        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">
+           <maxFileSize>10MB</maxFileSize>
+        </triggeringPolicy>
         <encoder>
             <pattern>
                 %d - %msg%n
