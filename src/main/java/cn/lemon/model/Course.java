@@ -27,18 +27,15 @@ public class Course {
      */
     @Column(name="course_name")
     private String courseName;
-
+    /**
+     * 课程
+     */
     @OneToMany(mappedBy = "course",cascade = CascadeType.ALL)
     private List<Score> courScores = new ArrayList<>();
-
+    /**
+     * 教师
+     */
     @ManyToMany(mappedBy = "teachCourse")
     private List<Teacher> teacherList = new ArrayList<>();
 
-    @Override
-    public String toString() {
-        return "Course{" +
-                "courseId=" + courseId +
-                ", courseName='" + courseName + '\'' +
-                '}';
-    }
 }

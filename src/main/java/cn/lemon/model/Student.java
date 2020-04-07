@@ -32,17 +32,11 @@ public class Student {
      */
     @Column(name = "stu_age")
     private int stuAge;
-
+    /**
+     * 分数
+     */
     @OneToMany(mappedBy = "student",cascade = CascadeType.ALL)
     List<Score> stuScores = new ArrayList<>();
 
-    @Override
-    public String toString() {
-        return "Student{" +
-                "stuId=" + stuId +
-                ", stuName='" + stuName + '\'' +
-                ", stuAge=" + stuAge +
-                ", stuScores=" + stuScores +
-                '}';
-    }
+
 }

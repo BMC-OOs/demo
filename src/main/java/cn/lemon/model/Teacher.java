@@ -32,7 +32,9 @@ public class Teacher {
      */
     @Column(name = "teacher_position")
     private String teachPosition;
-
+    /**
+     * 课程
+     */
     @ManyToMany(targetEntity = Course.class,cascade = CascadeType.ALL)
     @JoinTable(name = "teacher_course",
             joinColumns = {@JoinColumn(name = "teacher_id",referencedColumnName = "teacher_id")},

@@ -31,22 +31,18 @@ public class Score {
      */
     @Column(name = "score_date")
     private Date ScoreDate;
-
+    /**
+     * 学生
+     */
     @ManyToOne(targetEntity = Student.class)
     @JoinColumn(name = "stu_id",referencedColumnName = "stu_id")
     private Student student;
-
+    /**
+     * 课程
+     */
     @ManyToOne(targetEntity = Course.class)
     @JoinColumn(name = "course_id",referencedColumnName = "course_id")
     private Course course;
 
-    @Override
-    public String toString() {
-        return "Score{" +
-                "scoreId=" + scoreId +
-                ", scores=" + scores +
-                ", ScoreDate=" + ScoreDate +
-                ", course=" + course +
-                '}';
-    }
+
 }
