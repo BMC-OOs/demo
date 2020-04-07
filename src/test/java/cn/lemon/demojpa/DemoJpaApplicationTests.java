@@ -1,11 +1,10 @@
-package cn.bmc.demojpa;
+package cn.lemon.demojpa;
 
-import cn.bmc.DemoJpaApplication;
-import cn.bmc.dao.CourseDao;
-import cn.bmc.dao.StudentDao;
-import cn.bmc.dao.TeacherDao;
-import cn.bmc.dto.StudentDTO;
-import cn.bmc.model.Student;
+import cn.lemon.DemoJpaApplication;
+import cn.lemon.dao.CourseDao;
+import cn.lemon.dao.StudentDao;
+import cn.lemon.dao.TeacherDao;
+import cn.lemon.model.Student;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -16,7 +15,6 @@ import org.springframework.data.jpa.domain.Specification;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.criteria.*;
-import java.util.ArrayList;
 import java.util.List;
 
 @SpringBootTest(classes = DemoJpaApplication.class)
