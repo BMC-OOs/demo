@@ -16,12 +16,12 @@ public interface TeacherScoreRepository {
      * @param page_Size
      * @return
      */
-    public List<AllTeachScoreDTO> findAllTeacherScore(Integer current_Page, Integer page_Size);
+     List<AllTeachScoreDTO> findAllTeacherScore(Integer current_Page, Integer page_Size);
 
     /**
      * 教师查询本人每学年，学科平均成绩，最高分，最低分
      * @param name
      * @return
      */
-    public List<TeachByNameScoreDTO> findTeacherScoreByName(String name);
+     List<TeachByNameScoreDTO> findTeacherScoreByName(String name);
 }

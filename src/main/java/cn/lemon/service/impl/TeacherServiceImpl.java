@@ -18,7 +18,7 @@ import java.util.List;
  * @date 2020-04-12 14:27
  */
 @Service
-@Transactional
+@Transactional(rollbackFor = Exception.class)
 public class TeacherServiceImpl implements TeacherService{
     @Autowired
     private TeacherScoreRepositoryImpl teacherScoreDao;

@@ -16,11 +16,11 @@ public interface StudentScoreRepository {
      * @param current_Page
      * @return
      */
-    public List<AllStuScoreDTO> findAllStudentScore(Integer current_Page, Integer page_Size);
+     List<AllStuScoreDTO> findAllStudentScore(Integer current_Page, Integer page_Size);
     /**
      *学生查询本人每学年各学科成绩
      * @param name
      * @return
      */
-    public List<StuByNameScoreDTO> findStudentScoreByName(String name);
+     List<StuByNameScoreDTO> findStudentScoreByName(String name);
 }
