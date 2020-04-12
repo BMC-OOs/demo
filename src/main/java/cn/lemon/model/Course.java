@@ -1,8 +1,15 @@
 package cn.lemon.model;
 
+
+
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.io.Serializable;
+import java.math.BigDecimal;
+import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,28 +21,30 @@ import java.util.List;
 @Data
 @Entity
 @Table(name = "course")
-public class Course {
+@ApiModel("课程类")
+public class Course implements Serializable {
     /**
      * 课程id
      */
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "course_id")
+    @ApiModelProperty("课程id")
     private Integer courseId;
     /**
      * 课程名
      */
+
     @Column(name="course_name")
+    @ApiModelProperty("课程名")
     private String courseName;
     /**
      * 课程
      */
+    @ApiModelProperty("关联关系表")
     @OneToMany(mappedBy = "course",cascade = CascadeType.ALL)
     private List<Score> courScores = new ArrayList<>();
-    /**
-     * 教师
-     */
-    @ManyToMany(mappedBy = "teachCourse")
-    private List<Teacher> teacherList = new ArrayList<>();
+
+
 
 }

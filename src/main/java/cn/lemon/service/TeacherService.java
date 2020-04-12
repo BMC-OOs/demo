@@ -1,33 +1,34 @@
 package cn.lemon.service;
 
-import cn.lemon.dto.TeacherDTO;
-import com.nhsoft.provider.common.Response;
+import cn.lemon.dto.AllTeachScoreDTO;
+import cn.lemon.dto.TeachByNameScoreDTO;
 
 import java.util.List;
 
 /**
  * @author BMC
- * @date 2020-04-07 0:06
+ * @date 2020-04-12 14:26
  */
 public interface TeacherService {
     /**
-     * 教师查询自己平均分，最高分，最低分
-     * @param name
+     * 教导主任查询教师各科平均成绩，最高分，最低分
+     * @param current_Page
+     * @param page_Size
      * @return
      */
-    Response<List<TeacherDTO>> getTeacherScoreByName(String name, Integer page_Size, Integer current_Page);
+    List<AllTeachScoreDTO> findAllTeacherScore(Integer current_Page, Integer page_Size);
 
     /**
-     * 教师-学科平均成绩，最高分，最低分
-     * @return
-     */
-    Response<List<TeacherDTO>> getAllTeacherScore();
-
-    /**
-     * 获取教师信息
+     * 查询老师是否是教导主任
      * @param id
      * @return
      */
-    int getTeacher(Integer id);
+    Boolean isPermission(Integer id);
 
+    /**
+     * 教师查询本人每学年，学科平均成绩，最高分，最低分
+     * @param name
+     * @return
+     */
+    List<TeachByNameScoreDTO> findTeacherScoreByName(String name);
 }

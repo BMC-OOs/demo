@@ -5,8 +5,7 @@
     <appender name="consoleLog" class="ch.qos.logback.core.ConsoleAppender">
         <layout class="ch.qos.logback.classic.PatternLayout">
             <pattern>
-                <!--%d表示日期， %msg表示日志的信息， %n表示换行-->
-                %d - %msg%n
+                %d{yyyy-MM-dd HH:mm:ss} [%level] - %m%n
             </pattern>
         </layout>
     </appender>
@@ -28,7 +27,7 @@
         </triggeringPolicy>
         <encoder>
             <pattern>
-                %d - %msg%n
+                %d{yyyy-MM-dd HH:mm:ss} [%level] - %m%n
             </pattern>
         </encoder>
 
@@ -51,7 +50,7 @@
         </triggeringPolicy>
         <encoder>
             <pattern>
-                %d - %msg%n
+                %d{yyyy-MM-dd HH:mm:ss} [%level] - %m%n
             </pattern>
         </encoder>
 

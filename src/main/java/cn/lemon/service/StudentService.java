@@ -1,7 +1,7 @@
 package cn.lemon.service;
 
-import cn.lemon.dto.StudentDTO;
-import com.nhsoft.provider.common.Response;
+import cn.lemon.dto.AllStuScoreDTO;
+import cn.lemon.dto.StuByNameScoreDTO;
 
 import java.util.List;
 
@@ -11,9 +11,17 @@ import java.util.List;
  */
 public interface StudentService {
     /**
-     * 学生查询自己平均分，最高，最低分
+     * 学生每年学科平均分，最高，最低分
+     * @param page_Size
+     * @param current_Page
+     * @return
+     */
+    List<AllStuScoreDTO> findAllStudentScore(Integer page_Size, Integer current_Page);
+
+    /**
+     * 学生查询自己每年学科各科成绩
      * @param name
      * @return
      */
-    Response<List<StudentDTO>> findStudentScoreByName(String name, Integer page_Size, Integer current_Page);
+    List<StuByNameScoreDTO>  findStuScoreByName(String name);
 }
